@@ -1,0 +1,16 @@
+# 44 - Leia um número positivo do usuário, então, calcule e imprima a sequência Fibonacci até o primeiro
+# número superior ao número lido, Exemplo: se o usuário informou o número 30, a sequência a ser impressa
+# será: 0112358132134.
+
+num = int(input('Informe um número positivo: '))
+
+if num <= 0:
+    print('Número inválido')
+
+else:
+    a , b = 0, 1
+
+    while b <= num:
+        print(b, end="")
+        a, b = b , a + b
+    print()
